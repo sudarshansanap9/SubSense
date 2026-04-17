@@ -1,0 +1,13 @@
+com\subsense\subscription\service\SubscriptionSearchService.class
+com\subsense\subscription\service\SubscriptionDetectionService.class
+com\subsense\subscription\repository\SubscriptionRepository.class
+com\subsense\subscription\service\SubscriptionService.class
+com\subsense\subscription\service\IdempotencyService.class
+com\subsense\subscription\dto\TransactionIngestedEvent.class
+com\subsense\subscription\service\SubscriptionDetectionService$1.class
+com\subsense\subscription\SubscriptionEngineApplication.class
+com\subsense\subscription\document\SubscriptionDocument.class
+com\subsense\subscription\controller\SubscriptionController.class
+com\subsense\subscription\entity\Subscription.class
+com\subsense\subscription\kafka\TransactionKafkaConsumer.class
+com\subsense\subscription\repository\SubscriptionSearchRepository.class

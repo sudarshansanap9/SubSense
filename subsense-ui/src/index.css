@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  background-color: #030305;
+  color: #FFFFFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Subtle Aurora Gradients */
+body::before {
+  content: "";
+  position: fixed;
+  top: -10%; left: -10%; width: 60vw; height: 60vh;
+  background: radial-gradient(circle closest-side, rgba(0, 229, 255, 0.08), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -20%; right: -10%; width: 70vw; height: 70vh;
+  background: radial-gradient(circle closest-side, rgba(176, 38, 255, 0.08), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base Glassmorphism utility */
+.glass-panel {
+  @apply bg-white/[0.02] backdrop-blur-3xl;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #00E5FF, #B026FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

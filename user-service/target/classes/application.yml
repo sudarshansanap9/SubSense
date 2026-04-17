@@ -1,0 +1,32 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/subsense_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  secret: aVeryLongSuperSecretKeyForJwtGenerationSubSenseEngine12345
+  expiration: 900000 # 15 minutes in milliseconds
+
+logging:
+  level:
+    com.subsense: DEBUG
+    org.springframework.security: DEBUG

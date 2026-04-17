@@ -1,0 +1,19 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: recommendation-engine
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+app:
+  recommendation:
+    thresholds:
+      downgrade-cost-per-use: 100.0 # Above Rs.100 per use triggers downgrade recommendation
+
+logging:
+  level:
+    com.subsense: DEBUG
