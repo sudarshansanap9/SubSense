@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=SubSense+Logo" alt="SubSense Logo" width="120" />
-  <h1>SubSense Engine</h1>
+  <h1>⚡ SubSense Engine</h1>
   <p><strong>A highly scalable, event-driven personal finance and subscription intelligence platform.</strong></p>
 
   [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://java.com)
